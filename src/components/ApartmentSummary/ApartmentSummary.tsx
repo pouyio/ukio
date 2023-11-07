@@ -1,4 +1,4 @@
-import { Apartment } from "../../types/Apartment";
+import { Apartment } from "../../../types/Apartment";
 
 export const ApartmentSummary: React.FC<{ data: Apartment }> = ({ data }) => {
   return (

@@ -1,6 +1,6 @@
-import { useSearchParams } from "../hooks/useSearchParams";
+import { useSearchParams } from "../../hooks/useSearchParams";
 
-const PAGINATION = 6;
+export const PAGINATION = 6;
 
 export const Pagination: React.FC<{
   totalItems: number;

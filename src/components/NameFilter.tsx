@@ -8,6 +8,7 @@ export const NameFilter: React.FC = () => {
       <input
         className="bg-gray-200 rounded-bl-lg rounded-tr-lg w-full p-2 dark:bg-gray-700 dark:border-gray-600 focus:outline-none"
         placeholder="Filter by name"
+        role="textbox"
         type="text"
         value={query}
         onChange={(e) => setSearchParams({ query: e.target.value })}

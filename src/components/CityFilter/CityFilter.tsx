@@ -1,5 +1,5 @@
-import { cities } from "../../types/Apartment";
-import { useSearchParams } from "../hooks/useSearchParams";
+import { cities } from "../../../types/Apartment";
+import { useSearchParams } from "../../hooks/useSearchParams";
 
 export const CityFilter: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams({ city: cities[0] });

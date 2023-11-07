@@ -1,13 +1,13 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import { Apartment, cities } from "../types/Apartment";
-import { ApartmentSummary } from "./components/ApartmentSummary";
+import { ApartmentSummary } from "./components/ApartmentSummary/ApartmentSummary";
 import { AvailabilityNextMonth } from "./components/AvailavilityNextMonth";
-import { CityFilter } from "./components/CityFilter";
+import { CityFilter } from "./components/CityFilter/CityFilter";
 import { Empty } from "./components/Empty";
 import { Loading } from "./components/Loading";
 import { NameFilter } from "./components/NameFilter";
-import { Pagination } from "./components/Pagination";
+import { Pagination } from "./components/Pagination/Pagination";
 import { Range } from "./components/Range";
 import { useDebounce } from "./hooks/useDebounce";
 import { useSearchParams } from "./hooks/useSearchParams";
