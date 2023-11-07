@@ -11,6 +11,7 @@ import { Pagination } from "./components/Pagination";
 import { Range } from "./components/Range";
 import { useDebounce } from "./hooks/useDebounce";
 import { useSearchParams } from "./hooks/useSearchParams";
+import { API_URL } from "./utils";
 
 function App() {
   const [apartments, setApartments] = useState<Apartment[]>([]);
@@ -28,7 +29,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://localhost:3000/api/handler?${new URLSearchParams({
+      `${API_URL}/handler?${new URLSearchParams({
         city,
         query: encodeURIComponent(query),
         min: `${min}`,
